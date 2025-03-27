@@ -23,18 +23,18 @@
 <script>
     const firstName=document.getElementById('first');
     const lastName=document.getElementById('last');
-    const fulName=document.querySelector('p')
     const printName=document.querySelector('[name=button]');
+    const content = document.querySelector('.content');
 
-    function fullerName(){
-        let first=firstName.value;
-        let last=lastName.value;
-        let fullName= `${first} ${last}`;
-    }
     printName.addEventListener('click', function(e){
+        console.log("testdsfhjsldkjfhlsk")
+        let first= firstName.value;
+        let last= lastName.value;
+        const finalName=document.createElement('h1');
+        finalName.innerHTML=  first + " " + last ;
+        content.appendChild(finalName)
         firstName.value="";
         lastName.value="";
-        const name
     })
 </script>
 </body>
