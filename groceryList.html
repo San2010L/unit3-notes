@@ -6,6 +6,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="content">
+    <h1>Your Grocery List</h1>
+    <div class="content">
+        <label for="item">Item</label>
+        <input type="text" id="item" name="item_name" placeholder="example: eggs">
+    </div>
+    <button name="button"> add to list</button>
 
+    <ul>
+
+        <li></li>
+    </ul>
+</div>
+<script>
+    const itemName=document.getElementById('item');
+    const content=document.querySelector('ul');
+    const button_click=document.querySelector('[name=button]');
+
+
+    button_click.addEventListener('click', function(e){
+        console.log("TestTTTTTTTTTT");
+        let item=itemName.value;
+        const name=document.createElement('li');
+        name.addEventListener('click', function(e){
+            const unwantedElement2=document.querySelector(name);
+            unwantedElement2.remove();
+        })
+        name.innerHTML= item;
+        content.appendChild(name);
+        itemName.value="";
+    })
+
+
+</script>
 </body>
 </html>
