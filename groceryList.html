@@ -16,7 +16,7 @@
 
     <ul>
 
-        <li></li>
+
     </ul>
 </div>
 <script>
@@ -30,8 +30,8 @@
         let item=itemName.value;
         const name=document.createElement('li');
         name.addEventListener('click', function(e){
-            const unwantedElement2=document.querySelector(name);
-            unwantedElement2.remove();
+            const name_remove=document.querySelector("li");
+            name_remove.remove();
         })
         name.innerHTML= item;
         content.appendChild(name);
