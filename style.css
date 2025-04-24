@@ -56,3 +56,8 @@ section header{
     display: flex;
     gap: 16px;
 }
+.character{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+}
