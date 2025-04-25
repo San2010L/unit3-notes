@@ -11,31 +11,54 @@
   <div class="container">
     <div class="character">
       <h3>Gumball</h3>
-      <button>Pick</button>
+      <button onclick="Gumball()">Pick</button>
     </div>
     <div class="character">
       <h3>Darwin</h3>
-      <button>Pick</button>
+      <button onclick="Darwin()">Pick</button>
     </div>
     <div class="character">
       <h3>Nicole</h3>
-      <button>Pick</button>
+      <button onclick="Nicole()">Pick</button>
     </div>
     <div class="character">
       <h3>Richard</h3>
-      <button>Pick</button>
+      <button onclick="Richard()">Pick</button>
     </div>
     <div class="character">
       <h3>Anais</h3>
-      <button>Pick</button>
+      <button onclick="Anais()">Pick</button>
     </div>
     <div class="character">
       <h3>Penny</h3>
-      <button>Pick</button>
+      <button onclick="Penny()">Pick</button>
     </div>
-    <div class="Image" id="image">
-      <img  src="https://www.looneylabs.com/sites/default/files/marketing_images/ChooseOneLogo.png">
+    <div class="Image" >
+      <img id="image" src="https://www.looneylabs.com/sites/default/files/marketing_images/ChooseOneLogo.png">
     </div>
   </div>
+
+<script>
+  const image=document.querySelector("#image");
+  function Gumball(){
+    image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62-AGtwTqXb9tJL8tIPfSF6lzMPyOZsaIsg&s"
+  }
+  function Darwin(){
+    image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9hREUAhir8JKJgJK-NmTo2KcPM3SNYL_BjQ&s"
+  }
+  function Nicole(){
+    image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ldSg1HqRA1vmAo18wy_lowjqqsv3j5fYJw&s"
+  }
+  function Richard(){
+    image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVobw3yPbDTknzBbapn0n_MeqfQznjWMQLRg&s"
+  }
+  function Anais(){
+    image.src=""
+  }
+  function Penny(){
+    image.src=""
+  }
+
+</script>
 </body>
 </html>
